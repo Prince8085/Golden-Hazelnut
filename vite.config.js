@@ -16,7 +16,7 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    minify: 'terser',
+    minify: false, // Temporarily disable minification to avoid terser issues
     rollupOptions: {
       output: {
         manualChunks: {
