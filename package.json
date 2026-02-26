@@ -1,0 +1,34 @@
+{
+  "name": "golden-praline-bliss",
+  "version": "1.0.0",
+  "description": "Luxury scroll-based chocolate animation using React & Canvas",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "analyze": "vite build --analyze"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.3.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "keywords": [
+    "react",
+    "canvas",
+    "animation",
+    "scroll",
+    "luxury",
+    "cinematic"
+  ],
+  "author": "Golden Hazelnut Praline Bliss",
+  "license": "MIT"
+}

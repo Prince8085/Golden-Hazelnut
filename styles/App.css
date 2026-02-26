@@ -1,0 +1,65 @@
+/* =====================================================
+   GOLDEN HAZELNUT PRALINE BLISS - MAIN STYLES
+   ===================================================== */
+
+:root {
+  --gold-primary: #C6A85A;
+  --gold-light: #E8D4B0;
+  --chocolate-dark: #1A0F08;
+  --chocolate-medium: #2A1810;
+  --black-deep: #0a0a0a;
+  --cream-light: #F5EDE0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, var(--chocolate-dark) 0%, var(--black-deep) 100%);
+  color: var(--cream-light);
+  overflow-x: hidden;
+}
+
+.app-container {
+  width: 100%;
+}
+
+/* Animation Section with 500vh height */
+.animation-section {
+  position: relative;
+  height: 500vh;
+  width: 100%;
+  background: transparent;
+}
+
+.animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .animation-section {
+    height: 600vh;
+  }
+}
+
+
+

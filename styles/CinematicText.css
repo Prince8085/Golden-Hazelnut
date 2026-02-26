@@ -1,0 +1,102 @@
+/* =====================================================
+   CINEMATIC TEXT STYLES
+   ===================================================== */
+
+.cinematic-text-container {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  width: 100%;
+  padding: 0 40px;
+  pointer-events: none;
+  text-align: center;
+}
+
+.cinematic-text {
+  display: inline-block;
+  text-align: center;
+  transition: opacity 0.3s ease-out;
+}
+
+.cinematic-headline {
+  font-size: clamp(2em, 8vw, 5em);
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  color: #C6A85A;
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  margin: 0;
+  padding: 0;
+}
+
+.cinematic-text.stage-0 .cinematic-headline {
+  color: #C6A85A;
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.cinematic-text.stage-1 .cinematic-headline {
+  color: #E8D4B0;
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.cinematic-text.stage-2 .cinematic-headline {
+  color: #C6A85A;
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.cinematic-text.stage-3 .cinematic-headline {
+  color: #E8D4B0;
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .cinematic-headline {
+    font-size: clamp(1.5em, 6vw, 4em);
+  }
+}
+
+@media (max-width: 768px) {
+  .cinematic-text-container {
+    bottom: 60px;
+    padding: 0 30px;
+  }
+
+  .cinematic-headline {
+    font-size: clamp(1.2em, 5vw, 3em);
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (max-width: 480px) {
+  .cinematic-text-container {
+    bottom: 50px;
+    padding: 0 20px;
+  }
+
+  .cinematic-headline {
+    font-size: clamp(1em, 4vw, 1.8em);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cinematic-text {
+    animation: none !important;
+  }
+
+  .cinematic-headline {
+    animation: none !important;
+  }
+}
