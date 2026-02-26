@@ -5,17 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "preview": "vite preview",
     "analyze": "vite build --analyze"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "terser": "^5.46.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
-    "terser": "^5.46.0",
     "vite": "^4.3.0"
   },
   "engines": {
