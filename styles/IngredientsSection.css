@@ -6,7 +6,7 @@
   background: linear-gradient(135deg, #2A1810 0%, #1A0F08 100%);
   position: relative;
   overflow: hidden;
-  background-image: url('/Whisk_603993c2f46dc5abbbc42d0c14003eeadr.png');
+  background-image: url(/Whisk_603993c2f46dc5abbbc42d0c14003eeadr.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
