@@ -84,12 +84,12 @@ function App() {
       </div>
 
       {/* Cinematic Scroll Animation Section */}
-      <section 
+      <section
         ref={animationSectionRef}
         className="animation-section"
       >
         <div className="animation-container">
-          <CanvasAnimation 
+          <CanvasAnimation
             scrollProgress={scrollProgress}
             isLoading={!imagesLoaded}
             onLoadComplete={handleLoadComplete}
