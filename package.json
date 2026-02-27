@@ -19,7 +19,7 @@
     "vite": "^4.3.0"
   },
   "engines": {
-    "node": "18.x",
+    "node": "24.x",
     "npm": ">=6.0.0"
   },
   "keywords": [
